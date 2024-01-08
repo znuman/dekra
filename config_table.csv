@@ -1,31 +1,31 @@
-﻿task_id,task_name,source_folder,source_database,source_schema,source_table,source_view,target_folder,target_database,target_schema,target_table,is_incre,needed_cols_name,key_col_name,time_col_name,enable,last_load_run
+task_id,task_name,source_folder,source_database,source_schema,source_table,source_view,target_folder,target_database,target_schema,target_table,is_incre,needed_cols_name,key_col_name,time_col_name,enable,last_load_run
 1,source_to_raw,NULL,global-booking-uat,dbo,Locations,NULL,raw,NULL,parquet,Locations,NULL,LocationId,"[LocationId] ,[LocationExternalSystemId] ,[TenantId] ,[TimeZoneId] ,[LocationName] ,[EmailAddress] ,[PhoneNumber1] ,[PhoneNumber2] ,[SiteManagerName] ,[SiteManagerEmailAddress] ,[SiteManagerPhoneNumber] ,[Notes] ,[Deleted] ,[AddressLine1] ,[AddressLine2] ,[City] ,[PostalCode] ,[State] ,[Country] ,[GeoLocation].STAsText() as LatLon ,[LeadTimeAuditing] ,[LeadTimeInspection] ,[RegionId] ,[OE] ,[InfoText] ,[UnAvailableForRetail] ,[LeadTimeExcludingClosedDay] ,[NotShowInRetailList] ,[ShowOtherServiceContent] ",UpdatedDate,1,1/5/2024,7:58:02 AM
 2,source_to_raw,NULL,global-booking-uat,dbo,Bookings,NULL,raw,NULL,parquet,Bookings,1,BookingId,"[OrganizationId] ,[StartDateTime] ,[EndDateTime] ,[Deleted] ,[TenantId] ,[Note] ,[LocationId] ,[LocationName] ,[ProductName] ,[ReservationNumber] ,[HasBeenConfirm] ,[NumberEditedBooking] ,[HasBeenRemindB",UpdatedDate,1,1/5/2024,8:58:02 AM
-3,source_to_raw,NULL,global-booking-uat,dbo,ResourceFreeSchedules,NULL,raw,NULL,parquet,ResourceFreeSchedules,1,ResourceFreeScheduleId,*,UpdateDate,1,1/5/2024,9:58:02 AM
-4,source_to_raw,NULL,global-booking-uat,dbo,Products,NULL,raw,NULL,parquet,Products,NULL,ProductId,*,UpdatedDate,1,1/5/2024,10:58:02 AM
-5,source_to_raw,NULL,global-booking-uat,dbo,LocationProducts,NULL,raw,NULL,parquet,LocationProducts,NULL,LocationProductId,*,UpdatedDate,1,1/5/2024,11:58:02 AM
-6,source_to_raw,NULL,global-booking-uat,dbo,BookingResources,NULL,raw,NULL,parquet,BookingResources,NULL,BookingResourceId,*,NULL,1,1/5/2024,12:58:02 PM
-7,source_to_raw,NULL,global-booking-uat,dbo,BookingStates,NULL,raw,NULL,parquet,BookingStates,NULL,BookingStateId,*,NULL,1,1/5/2024,1:58:02 PM
-8,source_to_raw,NULL,global-booking-uat,dbo,ResourceProducts,NULL,raw,NULL,parquet,ResourceProducts,NULL,ResourceProductId,*,NULL,1,1/5/2024,2:58:02 PM
-9,source_to_raw,NULL,global-booking-uat,dbo,ProductResourceTypes,NULL,raw,NULL,parquet,ProductResourceTypes,NULL,ProductResourceTypeId,*,NULL,1,1/5/2024,3:58:02 PM
-10,source_to_raw,NULL,global-booking-uat,dbo,Regions,NULL,raw,NULL,parquet,Regions,NULL,RegionId,*,NULL,1,1/5/2024,4:58:02 PM
-11,source_to_raw,NULL,global-booking-uat,dbo,Resources,NULL,raw,NULL,parquet,Resources,NULL,ResourceId,*,NULL,1,1/5/2024,5:58:02 PM
-12,source_to_raw,NULL,global-booking-uat,dbo,ResourceTypes,NULL,raw,NULL,parquet,ResourceTypes,NULL,ResourceTypeId,*,NULL,1,1/5/2024,6:58:02 PM
-13,source_to_raw,NULL,global-booking-uat,dbo,Roles,NULL,raw,NULL,parquet,Roles,NULL,RoleId,*,NULL,1,1/5/2024,7:58:02 PM
-14,source_to_raw,NULL,global-booking-uat,dbo,Tenants,NULL,raw,NULL,parquet,Tenants,NULL,TenantId,*,NULL,1,1/5/2024,8:58:02 PM
-15,source_to_raw,NULL,global-booking-uat,dbo,Users,NULL,raw,NULL,parquet,Users,NULL,UserId,*,NULL,1,1/5/2024,9:58:02 PM
+3,source_to_raw,NULL,global-booking-uat,dbo,ResourceFreeSchedules,NULL,raw,NULL,parquet,ResourceFreeSchedules,1,ResourceFreeScheduleId,NULL,UpdateDate,1,1/5/2024,9:58:02 AM
+4,source_to_raw,NULL,global-booking-uat,dbo,Products,NULL,raw,NULL,parquet,Products,NULL,ProductId,NULL,UpdatedDate,1,1/5/2024,10:58:02 AM
+5,source_to_raw,NULL,global-booking-uat,dbo,LocationProducts,NULL,raw,NULL,parquet,LocationProducts,NULL,LocationProductId,NULL,UpdatedDate,1,1/5/2024,11:58:02 AM
+6,source_to_raw,NULL,global-booking-uat,dbo,BookingResources,NULL,raw,NULL,parquet,BookingResources,NULL,BookingResourceId,NULL,NULL,1,1/5/2024,12:58:02 PM
+7,source_to_raw,NULL,global-booking-uat,dbo,BookingStates,NULL,raw,NULL,parquet,BookingStates,NULL,BookingStateId,NULL,NULL,1,1/5/2024,1:58:02 PM
+8,source_to_raw,NULL,global-booking-uat,dbo,ResourceProducts,NULL,raw,NULL,parquet,ResourceProducts,NULL,ResourceProductId,NULL,NULL,1,1/5/2024,2:58:02 PM
+9,source_to_raw,NULL,global-booking-uat,dbo,ProductResourceTypes,NULL,raw,NULL,parquet,ProductResourceTypes,NULL,ProductResourceTypeId,NULL,NULL,1,1/5/2024,3:58:02 PM
+10,source_to_raw,NULL,global-booking-uat,dbo,Regions,NULL,raw,NULL,parquet,Regions,NULL,RegionId,NULL,NULL,1,1/5/2024,4:58:02 PM
+11,source_to_raw,NULL,global-booking-uat,dbo,Resources,NULL,raw,NULL,parquet,Resources,NULL,ResourceId,NULL,NULL,1,1/5/2024,5:58:02 PM
+12,source_to_raw,NULL,global-booking-uat,dbo,ResourceTypes,NULL,raw,NULL,parquet,ResourceTypes,NULL,ResourceTypeId,NULL,NULL,1,1/5/2024,6:58:02 PM
+13,source_to_raw,NULL,global-booking-uat,dbo,Roles,NULL,raw,NULL,parquet,Roles,NULL,RoleId,NULL,NULL,1,1/5/2024,7:58:02 PM
+14,source_to_raw,NULL,global-booking-uat,dbo,Tenants,NULL,raw,NULL,parquet,Tenants,NULL,TenantId,NULL,NULL,1,1/5/2024,8:58:02 PM
+15,source_to_raw,NULL,global-booking-uat,dbo,Users,NULL,raw,NULL,parquet,Users,NULL,UserId,NULL,NULL,1,1/5/2024,9:58:02 PM
 30,raw_to_cleansed,raw,NULL,parquet,Bookings,NULL,NULL,LH_GDP_BookingInsights,NULL,Bookings,1,BookingId,"[BookingId] ,[CreatedBy] ,[CreatedDate] ,[UpdatedBy] ,[UpdatedDate] ,[PreviousBookingId] ,[NextBookingId] ,[BookingStateId] ,[InspectionStateId] ,[ProductId] ,[OrganizationId] ,[StartDateTime] ,[EndDateTime] ,[Deleted] ,[TenantId] ,[Note] ,[LocationId] ,[LocationName] ,[ProductName] ,[ReservationNumber] ,[HasBeenConfirm] ,[NumberEditedBooking] ,[HasBeenRemindBeforeBooking] ,[AcceptMarketingInformation] ,[ImportedDate] ,[BundleBookingId] ,[CountryPhoneCode] ,[IsDummy] ,[OrganizationProfileId] ,[LanguageCode]",UpdatedDate,1,1/5/2024,10:58:02 PM
-16,raw_to_cleansed,raw,NULL,parquet,ResourceFreeSchedules,v_pre_cleansed_ResourceFreeSchedules,NULL,LH_GDP_BookingInsights,NULL,ResourceFreeSchedules,1,ResourceFreeScheduleId,*,UpdateDate,1,1/5/2024,11:58:02 PM
-17,raw_to_cleansed,raw,NULL,parquet,Users,v_pre_cleansed_Users,NULL,LH_GDP_BookingInsights,NULL,Users,NULL,UserId,*,NULL,1,1/5/2024,12:58:02 AM
+16,raw_to_cleansed,raw,NULL,parquet,ResourceFreeSchedules,v_pre_cleansed_ResourceFreeSchedules,NULL,LH_GDP_BookingInsights,NULL,ResourceFreeSchedules,1,ResourceFreeScheduleId,NULL,UpdateDate,1,1/5/2024,11:58:02 PM
+17,raw_to_cleansed,raw,NULL,parquet,Users,v_pre_cleansed_Users,NULL,LH_GDP_BookingInsights,NULL,Users,NULL,UserId,NULL,NULL,1,1/5/2024,12:58:02 AM
 18,raw_to_cleansed,raw,NULL,parquet,Locations,NULL,NULL,LH_GDP_BookingInsights,NULL,Locations,NULL,LocationId,"[LocationId] ,[LocationExternalSystemId] ,[TenantId] ,[TimeZoneId] ,[LocationName] ,[EmailAddress] ,[PhoneNumber1] ,[PhoneNumber2] ,[SiteManagerName] ,[SiteManagerEmailAddress] ,[SiteManagerPhoneNumber] ,[Notes] ,[Deleted] ,[AddressLine1] ,[AddressLine2] ,[City] ,[PostalCode] ,[State] ,[Country] ,[GeoLocation].STAsText() as LatLon ,[LeadTimeAuditing] ,[LeadTimeInspection] ,[RegionId] ,[OE] ,[InfoText] ,[UnAvailableForRetail] ,[LeadTimeExcludingClosedDay] ,[NotShowInRetailList] ,[ShowOtherServiceContent] ",UpdatedDate,1,1/5/2024,1:58:02 AM
-19,raw_to_cleansed,raw,NULL,parquet,Products,NULL,NULL,LH_GDP_BookingInsights,NULL,Products,NULL,ProductId,*,UpdatedDate,1,1/5/2024,2:58:02 AM
-20,raw_to_cleansed,raw,NULL,parquet,LocationProducts,NULL,NULL,LH_GDP_BookingInsights,NULL,LocationProducts,NULL,LocationProductId,*,UpdatedDate,1,1/5/2024,3:58:02 AM
-21,raw_to_cleansed,raw,NULL,parquet,BookingResources,NULL,NULL,LH_GDP_BookingInsights,NULL,BookingResources,NULL,BookingResourceId,*,NULL,1,1/5/2024,4:58:02 AM
-22,raw_to_cleansed,raw,NULL,parquet,BookingStates,NULL,NULL,LH_GDP_BookingInsights,NULL,BookingStates,NULL,BookingStateId,*,NULL,1,1/5/2024,5:58:02 AM
-23,raw_to_cleansed,raw,NULL,parquet,ResourceProducts,NULL,NULL,LH_GDP_BookingInsights,NULL,ResourceProducts,NULL,ResourceProductId,*,NULL,1,1/5/2024,6:58:02 AM
-24,raw_to_cleansed,raw,NULL,parquet,ProductResourceTypes,NULL,NULL,LH_GDP_BookingInsights,NULL,ProductResourceTypes,NULL,ProductResourceTypeId,*,NULL,1,1/5/2024,7:58:02 AM
-25,raw_to_cleansed,raw,NULL,parquet,Regions,NULL,NULL,LH_GDP_BookingInsights,NULL,Regions,NULL,RegionId,*,NULL,1,1/5/2024,8:58:02 AM
-26,raw_to_cleansed,raw,NULL,parquet,Resources,NULL,NULL,LH_GDP_BookingInsights,NULL,Resources,NULL,ResourceId,*,NULL,1,1/5/2024,9:58:02 AM
-27,raw_to_cleansed,raw,NULL,parquet,ResourceTypes,NULL,NULL,LH_GDP_BookingInsights,NULL,ResourceTypes,NULL,ResourceTypeId,*,NULL,1,1/5/2024,10:58:02 AM
-28,raw_to_cleansed,raw,NULL,parquet,Roles,NULL,NULL,LH_GDP_BookingInsights,NULL,Roles,NULL,RoleId,*,NULL,1,1/5/2024,11:58:02 AM
-29,raw_to_cleansed,raw,NULL,parquet,Tenants,NULL,NULL,LH_GDP_BookingInsights,NULL,Tenants,NULL,TenantId,*,NULL,1,1/5/2024,12:58:02 PM
+19,raw_to_cleansed,raw,NULL,parquet,Products,NULL,NULL,LH_GDP_BookingInsights,NULL,Products,NULL,ProductId,NULL,UpdatedDate,1,1/5/2024,2:58:02 AM
+20,raw_to_cleansed,raw,NULL,parquet,LocationProducts,NULL,NULL,LH_GDP_BookingInsights,NULL,LocationProducts,NULL,LocationProductId,NULL,UpdatedDate,1,1/5/2024,3:58:02 AM
+21,raw_to_cleansed,raw,NULL,parquet,BookingResources,NULL,NULL,LH_GDP_BookingInsights,NULL,BookingResources,NULL,BookingResourceId,NULL,NULL,1,1/5/2024,4:58:02 AM
+22,raw_to_cleansed,raw,NULL,parquet,BookingStates,NULL,NULL,LH_GDP_BookingInsights,NULL,BookingStates,NULL,BookingStateId,NULL,NULL,1,1/5/2024,5:58:02 AM
+23,raw_to_cleansed,raw,NULL,parquet,ResourceProducts,NULL,NULL,LH_GDP_BookingInsights,NULL,ResourceProducts,NULL,ResourceProductId,NULL,NULL,1,1/5/2024,6:58:02 AM
+24,raw_to_cleansed,raw,NULL,parquet,ProductResourceTypes,NULL,NULL,LH_GDP_BookingInsights,NULL,ProductResourceTypes,NULL,ProductResourceTypeId,NULL,NULL,1,1/5/2024,7:58:02 AM
+25,raw_to_cleansed,raw,NULL,parquet,Regions,NULL,NULL,LH_GDP_BookingInsights,NULL,Regions,NULL,RegionId,NULL,NULL,1,1/5/2024,8:58:02 AM
+26,raw_to_cleansed,raw,NULL,parquet,Resources,NULL,NULL,LH_GDP_BookingInsights,NULL,Resources,NULL,ResourceId,NULL,NULL,1,1/5/2024,9:58:02 AM
+27,raw_to_cleansed,raw,NULL,parquet,ResourceTypes,NULL,NULL,LH_GDP_BookingInsights,NULL,ResourceTypes,NULL,ResourceTypeId,NULL,NULL,1,1/5/2024,10:58:02 AM
+28,raw_to_cleansed,raw,NULL,parquet,Roles,NULL,NULL,LH_GDP_BookingInsights,NULL,Roles,NULL,RoleId,NULL,NULL,1,1/5/2024,11:58:02 AM
+29,raw_to_cleansed,raw,NULL,parquet,Tenants,NULL,NULL,LH_GDP_BookingInsights,NULL,Tenants,NULL,TenantId,NULL,NULL,1,1/5/2024,12:58:02 PM
